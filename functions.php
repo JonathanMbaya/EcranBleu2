@@ -1,22 +1,15 @@
 <?php
-// Ajouter la prise en charge des images mises en avant
-  add_theme_support( 'post-thumbnails' );
 
-// Ajouter automatiquement le titre du site dans l'en-tête du site
-  add_theme_support( 'title-tag' );
-?>
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'title-tag' );
 
 
 
-<!-- Déclaration du menu-->
-<?php
 
 register_nav_menus( array
 ('main' => 'Menu Principal',
 'footer' => 'Bas de page',));
-?>
 
-<?php
 
 function capitaine_register_assets(){
 

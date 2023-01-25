@@ -1,0 +1,587 @@
+.mobile-background{
+	display:none;
+}
+
+a .ico-home{
+	color:white;
+}
+
+h1{
+	font-size: 3rem !important;
+}
+
+h2{
+	font-size: 2rem !important;
+}
+
+p {
+		font-size: 1rem !important;
+}
+
+#ctaa{
+		display: flex;
+		justify-content:center;
+		align-items: center;
+    text-align: center;
+		margin-top: 50px !important;
+		background-color: light;
+}
+
+#ctaa:hover {
+		display: flex;
+		justify-content:center;
+		align-items: center;
+    text-align: center;
+		margin-top: 50px !important;
+		background-color: white;
+}
+
+
+
+
+/* FIN MEDIA QUERIES CSS - MOBILE ET TABLETTE  */
+
+
+
+@media only screen and (max-width: 600px) {
+	
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items:center;
+		margin-bottom: 180px;
+	}
+	
+	.row {
+		flex-wrap: wrap !important;
+	}
+	
+	.mobile-background{
+	display:flex;
+		height:100%;
+}
+
+	
+	.desktop-background{
+	display:none;
+}
+
+
+    .img-bg-home{
+
+        position: absolute;
+        z-index:1000;
+        height: 60vh !important;
+    }
+	
+		.f-services{
+    display: flex;
+		flex-direction: column;
+		text-align: center;
+    justify-content: center;
+		}
+
+    .img-bg-footer{
+
+        position: absolute;
+        z-index: 1000;
+        height: 100vh !important;
+        transform: rotate(3.142rad);
+        
+    }
+
+    #front-title{
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .screenslider{
+        display: flex;
+        justify-content: center;
+        width: 400px !important;
+        margin-top: 50px;
+        position: relative;
+        z-index: 1000 !important;
+    }
+    
+    .screen img {
+        width: 100%;
+    }
+    
+    .screen{
+        max-width: 600px !important;
+        position: absolute;
+        z-index:900;
+      }
+    
+    .slider{
+        max-width: 280px !important;
+        position: absolute;
+    }
+
+    .text-presentation{
+        margin-top: 5px;
+    }
+
+}
+
+
+
+
+/* FIN MEDIA QUERIES CSS - MOBILE ET TABLETTE  */
+
+
+
+a{
+	text-decoration: none;
+	color:#4F679D;
+}
+
+a:hover{
+	color: #88A4E3;
+}
+header {
+	background-image : url(../img/Background.png);
+	background-repeat: no-repeat !important;
+	background-position: center center;
+	height: 70vh;
+}
+
+footer {
+	background-image : url(http://localhost/wordpress/wp-content/uploads/2022/09/FooterBg.png) !important;
+	background-repeat: no-repeat;
+	height: 150vh;
+}
+
+#hdr-apropos{
+	background-image: url('http://localhost/wordpress/wp-content/uploads/2022/09/Vector-6.jpg');
+		background-repeat: no-repeat;
+	background-position: center center;
+	height: 80vh;
+}
+
+
+#hdr-recrutement{
+		background-image: url('http://localhost/wordpress/wp-content/uploads/2022/09/Vector-6.jpg');
+		background-repeat: no-repeat;
+	background-position: center center;
+	height: 50vh;
+}
+
+
+
+.text-presentation{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+.screenslider{
+	position: relative;
+	z-index:1000;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.vertical { 
+border-left: 4px solid black; 
+height: 200px; 
+display: inline-block;
+}
+
+button{
+	
+	padding: 10px;
+	background: none;
+	border:solid 2px black;
+	color: black !important;
+	
+}
+
+button a {
+	color: black !important;
+}
+
+button:hover{
+
+	background: none;
+	border:solid 2px #88A4E3;
+	color: #88A4E3 !important;
+	transition: 0.5s;
+	
+}
+
+button a:hover {
+	color: #88A4E3 !important;
+	transition: 0.5s;
+}
+
+#img-block img{
+filter: contrast(50%);
+	    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#img-block img:hover{
+	filter: none;
+	transition: 0.5s;
+}
+
+#bg-single{
+	background-image:url('http://localhost/wordpress/wp-content/uploads/2022/09/Rectangle-97.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#navbarSupportedContent{
+    display: flex;
+		flex-direction:column !important;
+	align-items: flex-end;
+	
+}
+
+.wpcf7-form-control{
+	position: relative !important;
+	border-radius: 10px !important;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid lightgray;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+	
+}
+.wpcf7-submit{
+	border-radius: 10px !important;
+	display: flex;
+	justify-content:center;
+	width: 50%;
+	background: none;
+	border: 1px solid lightgray;
+	color: gray;
+}
+
+.wpcf7-submit:hover {
+		color: #88A4E3 !important;
+		border: 1px solid  #88A4E3;
+		transition: 0.4s;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+	justify-content: space-around;
+}
+
+.NavSideRight{
+	position: relative;
+	z-index:5000;
+	background: white;
+	height:100px;
+	width:100px;
+}
+
+.imgTemplates{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top:2px;
+		padding-bottom:5px;
+    width: 380px !important;
+    height: 240px !important;
+}
+
+.text-presentation{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+		padding:10px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%) !important;
+}
+
+#arrow-up{
+	position: fixed;
+	z-index: 7000;
+	width: 24px;
+	height: 24px;
+	bottom: 40px;
+	right : 40px;
+	color: lightgray;
+}
+
+form p{
+	text-align: center;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	width: 50%;
+}
+
+
+.animate__animated.animate__BackInUp {
+  --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+
+* {
+  box-sizing:border-box;
+}
+.heading-primary {
+  font-size:2em;
+  padding:2em;
+  text-align:center;
+}
+.accordion dl,
+
+.accordion dd,
+.accordion__panel {
+   background-color:#eee;
+   font-size:1em;
+   line-height:1.5em; 
+}
+.accordion-button{
+		position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px 30px 40px;
+    /* padding: 1rem 1.25rem; */
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+}
+.accordion-item {
+	border: none !important;
+}
+.accordion {
+    position:relative;
+    background-color:none;
+}
+.container {
+  max-width:960px;
+  margin:0 auto;
+  padding:2em 0 2em 0;
+}
+.accordionTitle,
+.accordion__Heading {
+ background-color:#38cc; 
+   text-align:center;
+     font-weight:700; 
+          padding:2em;
+          display:block;
+          text-decoration:none;
+          color:#fff;
+          transition:background-color 0.5s ease-in-out;
+  border-bottom:1px solid darken(#38cc70, 5%);
+}
+
+.accordionItem {
+    height:auto;
+    overflow:hidden; 
+    max-height:50em;
+    transition:max-height 1s;   
+ 
+    
+    @media screen and (min-width:48em) {
+         max-height:15em;
+        transition:max-height 0.5s
+        
+    }
+    
+   
+}
+ 
+.accordionItem.is-collapsed {
+    max-height:0;
+}
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+.animateIn {
+     animation: accordionIn 0.45s normal ease-in-out both 1; 
+}
+.animateOut {
+     animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform:scale(0.9) 	rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes accordionOut {
+    0% {
+       opacity: 1;
+       transform:scale(1);
+     }
+     100% {
+          opacity:0;
+           transform:scale(0.9) rotateX(-60deg);
+       }
+}
+
+
+/*  */
+
+#actionTache{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	background-color: blue;
+	width: 30px;
+	height: 30px;
+	border: 1px solid white;
+	border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-item{
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12 col-sm-12 col-12">
+
+            <?php
+                    /* on fait de $post une variable globale */
+                global $post;
+
+                    /* on stocke la variable dans un nom de variable inutilisé */
+                $sky_post_ID = $post->ID;
+
+                    /* on affiche cette variable */
+                    // echo $sky_post_ID;
+
+                    // identifiant de la page
+
+
+                if ($sky_post_ID == 17) {
+
+                    $post = get_post(270);
+
+                    $content = apply_filters('the_content', $post->post_content);
+                    $title = apply_filters('the_title', $post->post_title);
+                    $post_thumbnails = apply_filters('the_post_thumbnails', $post->post_thumbnails);
+
+                }
+
+                    
+
+                if ($sky_post_ID == 15) {
+
+                    $post = get_post(292);
+
+                    $content = apply_filters('the_content', $post->post_content);
+                    $title = apply_filters('the_title', $post->post_title);
+                    $post_thumbnails = apply_filters('the_post_thumbnails', $post->post_thumbnails);
+
+                }
+
+
+                if ($sky_post_ID == 19) {
+
+                    $post = get_post(296);
+
+                    $content = apply_filters('the_content', $post->post_content);
+                    $title = apply_filters('the_title', $post->post_title);
+                    $post_thumbnails = apply_filters('the_post_thumbnails', $post->post_thumbnails);
+
+                }
+
+                if ($sky_post_ID == 21) {
+
+                    $post = get_post(306);
+
+                    $content = apply_filters('the_content', $post->post_content);
+                    $title = apply_filters('the_title', $post->post_title);
+                    $post_thumbnails = apply_filters('the_post_thumbnails', $post->post_thumbnails);
+
+                }
+
+
+                if ($sky_post_ID == 28) {
+
+                    get_template_part( 'parts/internetservice' );
+
+                }
+
+                if ($sky_post_ID == 26) {
+
+                    get_template_part( 'parts/domaine' );
+
+                }
+
+            ?>
+
+            <h2>
+
+                <?php 
+                    // echo $title; 
+                ?>
+
+            </h2>
+
+            <p>
+
+                <?php
+                    // echo $content;
+                ?>
+
+            </p>
+
+        </div>
+
+    </div>
+</div>

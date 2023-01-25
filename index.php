@@ -1,49 +1,146 @@
-<?php get_header(); ?>
+<?php 
+
+    get_header(); 
+
+?>
 
 <!-- DEBUT DE HEADER -->
+<?php
+    echo '<img class="img-fluid mobile-background" style="position: absolute;" src=" '.get_bloginfo('stylesheet_directory').'/img/Background-mobile.png"/>'
+?>
 
+<?php
+    echo '<img class="img-fluid desktop-background" style="position: absolute;" src=" '.get_bloginfo('stylesheet_directory').'/img/Background.png"/>'
+?>
 
 <header  class="animate__animated animate__fadeInDown">
 
-    <div class="container">
+    <div class="container-fluid">
 
-        <div class="row">
+        <div style="padding: 4rem; " class="row">
 
-            <div class="col-md-6 col-12" style="padding-top: 50px;" id="front-title">
-                <h1 id="title-home">Ecran Bleu XV ,</h1>
+            <div aria-labelledby="title-home" class="col-md-4 col-12" id="front-title">
+
+
+                <h1 class="text-center" id="title-home" aria-label="Ecran Bleu XV">Ecran Bleu XV</h1>
 
                 <h2 id="subtitle-home">L’agence pour l’innovation de toute votre système d’information</h2>
+
             </div>
 
 
-            <div style="margin-top: 50px;" class="screenslider col-md-6 col-12">
 
-                <div style="position: relative;" class="slider">
+            <div class="screenslider  col-md-4 col-12">
+
+                <figure style="position: relative;" class="slider">
                     <?php
                         echo '<img class="img-fluid" src=" '.get_bloginfo('stylesheet_directory').'/img/website-templates.png"/>'
                     ?>
+                </figure> 
+
+                <!-- <figure class="screen">
+
+                    <?php
+                        // echo '<img class="img-fluid" src=" '.get_bloginfo('stylesheet_directory').'/assets/large-cinema-display.png"/>'
+                    ?>
+                </figure> -->
+
+            </div>
+
+
+
+            <div class="col-md-4 col-12 accordion accordion-flush" id="accordionFlushExample">
+
+                <div class="col-12 accordion-item">
+
+                    <h2 class="accordion-header" id="flush-headingTwo">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Conseils
+                        </button>
+
+                    </h2>
+
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        
+                        <ul class="accordion-body">
+
+                            <li>
+                                <a href="<?php  bloginfo ( 'url' ); ?>/?p=15">
+                                    Audit /Conseil
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="<?php  bloginfo ( 'url' ); ?>/?p=19">
+                                    Assistance
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="<?php  bloginfo ( 'url' ); ?>/?p=21">
+                                    Help Center / Help Desk
+                                </a>
+                            </li>
+                                
+                            <li>
+                                <a href="<?php  bloginfo ( 'url' ); ?>/?p=17">
+                                    Infogérance
+                                </a>
+                            </li>
+
+                        </ul>
+                                
+                    </div>
+
                 </div>
 
-                <div class="screen">
-                    <?php
-                        echo '<img class="" src=" '.get_bloginfo('stylesheet_directory').'/assets/large-cinema-display.png"/>'
-                    ?>
+
+                <div class="col-12 accordion-item">
+
+                    <h2 class="accordion-header" id="flush-headingThree">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Solutions
+                        </button>
+
+                    </h2>
+
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        
+                        <ul class="accordion-body">
+
+
+
+                            <li>
+                                <a href="<?php  bloginfo ( 'url' ); ?>/?p=28">
+                                    Internet Services
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="<?php  bloginfo ( 'url' ); ?>/?p=26">
+                                    Logiciels
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="<?php  bloginfo ( 'url' ); ?>/?p=24">
+                                    Solution de gestion
+                                </a>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                    
                 </div>
+
 
             </div>
 
         </div>
-
-    </div>
-
-
-    <div style="display: flex; flex-direction: column; align-items: center;">
-
-        <!-- <button id="ctaa">
-            Découvrez Ecran Bleu <br>
-        </button> -->
-
-        <!-- <i class="fa-solid fa-chevron-down"></i>   -->
 
     </div>
 
@@ -54,113 +151,131 @@
 <!-- FIN DE HEADER -->
 
 
-
-
 <!-- Présentation de l'entreprise -->
-<div class="container">
 
-    <h2>Pourquoi créer un site internet avec EcranBleu XV ?</h2>
-    
-</div>
+<div style="background-color : #FBF9F9 !important;">
 
-<div style ="margin-top : 25px; margin-bottom : 80px;" class="container block-presentation">
+    <div class="container">
 
-    
+        <h2 style ="color : #88A4E3 !important;" id="subtitle-home">Pourquoi créer un site internet ?</h2>
+        
+    </div>
 
+    <div style ="margin-bottom : 8rem; background-color : #FBF9F9 !important;" class="container block-presentation">
 
-    <div style="display: flex;" class="row">
-
-        <?php
-            echo '<img style=" border-radius : 10px;" class="img-fluid col-md-6 col-sm-6 col-12" src=" '.get_bloginfo('stylesheet_directory').'/img/website-templates.png"/>'
-        ?>
+        
 
 
-        <div style="border-radius: 10px;" class="text-presentation col-md-6 col-sm-6 col-12">
+        <div style="display: flex;" class="row" aria-labelledby="presentation-home">
+            
 
-            <h2 style ="margin-top : 50px; color : #88A4E3 !important;">Ecran Bleu</h2>
+            <?php
+                echo '<img style=" border-radius : 1rem;" class="img-fluid col-md-6" id="presentation-home" src=" '.get_bloginfo('stylesheet_directory').'/img/website-templates.png"/>'
+            ?>
 
-            Ecran Bleu est sans doute un bon choix pour la création de votre site internet.
-            Depuis l'arrivée du Très Haut Débit, l’avènement et la généralisation rapide 
-            de la vidéo à la demande via l’Internet, ont fait du début des années 
-            2000 une période riche en innovation et en accélération technologiques. <br><br>
 
-            Nous vous accompagnons et vous conseillons sur le sujet : comment créer votre site internet ?.
+            <div style="border-radius: 1rem; text-align: left;" aria-labelledby="text-presentation" class="col-md-6" >
+
+
+                <p id="text-presentation" aria-label="texte de presentation">
+                
+                    Ecran Bleu est sans doute un bon choix pour la création de votre site internet.
+                    Depuis l'arrivée du Très Haut Débit, l’avènement et la généralisation rapide 
+                    de la vidéo à la demande via l’Internet, ont fait du début des années 
+                    2000 une période riche en innovation et en accélération technologiques. <br><br>
+
+                    Nous vous accompagnons et vous conseillons sur le sujet : comment créer votre site internet ?
+
+                </p>
+
+            </div>
 
         </div>
+
+    </div>
+
+
+
+    <div class="col-md-12 col-sm-6 col-12" id="img-block" style="display: flex; justify-content: center; align-items: center; margin-bottom : 8rem;">
+
+        <a href="<?php bloginfo('url') ; ?>/?page_id=8">
+            <button style ="width: 15rem; height: 100px; border-radius: 1rem; margin-bottom : 8rem;">Vers A propos <i class="fa-solid fa-chevron-right"></i></button>
+        </a>
 
     </div>
 
 </div>
 
 
-
-<div class="col-md-12 col-sm-6 col-12" id="img-block" style="display: flex; justify-content: center; align-items: center; margin-bottom : 50px;">
-
-    <a href="<?php bloginfo('url') ; ?>/?page_id=8">
-        <button style ="width: 150px; height: 100px; border-radius: 10px;">Vers A propos <i class="fa-solid fa-chevron-right"></i></button>
-    </a>
-
-</div>
-
-<!-- <span class="vertical"></span> -->
-
 <!-- NOS SERVICES -->
 
-<section  class="container" style="background-color : #FBF9F9; margin-bottom: 50px;" id="forResult">
+<section  class="container-fluid row" style=" margin-bottom: 5rem;" id="forResult">
 
 
+<div aria-labelledby="subtitle-home">
 
-<h3>Nos Services</h3>
+    <h2 class="container" style="padding: 2rem ; color:#88A4E3; text-align : center;" aria-label="Nos services" role="subtitle">
+        Nos Services
+    </h2>
 
-<div style="margin : 50px;">
+    <div class="row">
 
-    <?php
-        $args = array(
-            'post_type' => 'post', // enter custom post type
-            'orderby' => 'date',
-            'order' => 'ASC',
-        );
+        <?php
+            $args = array(
+                'post_type' => 'post', // enter custom post type
+                'orderby' => 'date',
+                'order' => 'ASC',
+            );
 
-        $loop = new WP_Query( $args );
+            $loop = new WP_Query( $args );
 
-        if( $loop->have_posts() ):
+            if( $loop->have_posts() ):
 
-        while( $loop->have_posts() ): $loop->the_post(); global $post;
+                while( $loop->have_posts() ): $loop->the_post(); global $post;
 
-            echo '<div style="display: flex !important; flew-wrap: wrap !important; flex-direction: row !important;" class="container animate__animated animate__backInUp col-md-12 col-sm-12 col-12">';
-                echo '<div style="flew-wrap: wrap !important;" class="row portfolio">';
-
-                    echo '<h3>' . get_the_title(). '</h3>';
-
-                        echo '<div style="" class="portfolio-work">
-
-                                <div style="padding: 10px" class="text">'
-
-                                    . get_the_excerpt().' 
-                                    <br>
-                                    <br>
-                                    <button><a href='.get_the_permalink().'>Voir plus +</a></button>
-                                </div>
-                
+                    echo '<div class="container animate__animated animate__backInUp col-md-4 col-sm-12 col-12 ">';
                         
-                
-                        </div>';
+                        echo '<div style="padding: 2rem;" class="row portfolio">';
+
+                        
+
+                            echo '<h3 style="color:#88A4E3; text-align: left;">' . get_the_title(). '</h3>';
+
+                                echo '<div style="" class="portfolio-work">';
+
+                                // echo '<div class="img-fluid">
+                                //     <div style=" border-radius : 1rem;" class="img-fluid col-md-12 col-sm-12 col-12 mt-5 pb-5">
+                                //         ' .get_the_post_thumbnail().'
+                                //     </div>
+                                // </div>';
+
+                                echo '<div class="text">'
+
+                                        . get_the_excerpt().'
+                                        <br>
+                                        <br>
+                                        <a href='.get_the_permalink().'>
+                                        <button>Voir plus +</button>
+                                        </a>
+                                    </div>
+                        
+                                
+                        
+                                </div>';
 
 
+                        echo '</div>';  
 
-            echo '<hr></hr>';
+                    echo '</div>';
+                    
+                endwhile;
 
-            echo '</div>';
-            echo '</div>';
-
-            echo '</div>';
-
-            echo '</div>';
+            endif;
             
-        endwhile;
-        endif;
-        
-    ?>
+        ?>
+
+    </div>
+
 </div>
 
 
@@ -169,18 +284,20 @@
 
 <!-- Domaines d'activités -->
 
-<div id="domainActivity">
+<div style="background-color : #FBF9F9;" id="domainActivity">
     <?php get_template_part( 'parts/domaine' );?>
 </div>
 
 
-
 <?php get_template_part( 'parts/joinus' );?>
 
-<h3 style="text-align: center; margin: 40px 40px 40px 10px;">Ils nous font confiance</h3>
+
+<h3 style="text-align: center; margin: 40px 40px 40px 1rem;">Ils nous font confiance</h3>
+
+
 
 <?php echo do_shortcode('[sp_wpcarousel id="125"]'); ?>
 
-<!-- FOOTER -->
 
+<!-- FOOTER -->
 <?php get_footer(); ?>

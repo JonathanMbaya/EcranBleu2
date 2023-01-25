@@ -1,9 +1,9 @@
-<div style="margin-top: 100px; border: 1px solid lightgray; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important; border-radius: 10px;" class="container">
+<div style="margin-top: 100px; border-radius: 20px;" class="container">
     <div class="row">
 
 
         <?php
-            echo '<img style="padding: 0px; margin: 0px; border-radius: 20px 0px 0px 20px;" class="img-fluid col-md-6 col-sm-6 col-12 " src="http://localhost/wordpress/wp-content/uploads/2022/09/joinUs.png"/>'
+            echo '<img style="border-radius: 80px 0px 0px 80px;" class="img-fluid col-md-6 col-sm-6 col-12 " src="http://localhost/wordpress/wp-content/uploads/2022/09/joinUs.png"/>'
         ?>
 
         <div style="border-radius: 0px 10px 10px 0px; padding: 40px;" class="col-md-6 col-sm-6 col-12">
@@ -21,13 +21,13 @@
 
             ?>
 
-            <h2>
+            <h3 style=" color:#88A4E3; margin-bottom: 2rem;">
                 <?php echo $title; ?>
-            </h2>
+            </h3>
 
-                <?php
-                    echo $content;
-                ?>
+            <?php
+                echo $content;
+            ?>
 
             <a href="<?php bloginfo('url'); ?>/?page_id=5">
                 <button>
@@ -37,8 +37,5 @@
 
 
         </div>
-
-
-        
     </div>
 </div>

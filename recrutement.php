@@ -8,6 +8,12 @@ get_header();
 
 ?>
 
+<div style="position : absolute; Z-index:4000; top : 40px; left: 30px; color: white; text-decoration: none;">
+   <a href="<?php  bloginfo ( 'url' ); ?>"><i class="ico-home fa-solid fa-house fa-2x"></i></a>
+    
+    Revenir à l'accueil
+</div>
+
 
 <div id="hdr-recrutement" class="container-fluid animate__animated animate__fadeInDown">
 

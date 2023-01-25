@@ -11,6 +11,13 @@ Description: EcranBleu XV [Mettre une description dans le fichier CSS]
 
 @media only screen and (max-width: 600px) {
 
+    header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 
     .img-bg-home{
 
@@ -60,17 +67,21 @@ Description: EcranBleu XV [Mettre une description dans le fichier CSS]
         margin-top: 5px;
     }
 
+    .h2-presentation{
+        text-align: center;
+    }
+
 }
 
 
 /* HEADER */
+
 
 html, body {
     font-family: 'Ubuntu', sans-serif !important;
 }
 
 a, li, ul {
-
     text-decoration: none;
     list-style-type: none; 
     
@@ -86,10 +97,6 @@ a, li, ul {
     z-index: 1000;
     height: 180vh;
     transform: rotate(3.142rad);
-}
-
-#title-home , #subtitle-home {
-    color: white !important;
 }
 
 h1{
@@ -156,7 +163,6 @@ footer{
     flex-direction: row !important;
     justify-content: center;
     align-items: center;
-    margin-top: 50px !important;
 }
 
 /* BLOCK 2 - NOS SERVICES */
